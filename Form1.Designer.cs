@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnExec = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnExec
+            // 
+            this.btnExec.Location = new System.Drawing.Point(93, 62);
+            this.btnExec.Name = "btnExec";
+            this.btnExec.Size = new System.Drawing.Size(123, 161);
+            this.btnExec.TabIndex = 0;
+            this.btnExec.Text = "繰り返し";
+            this.btnExec.UseVisualStyleBackColor = true;
+            this.btnExec.Click += new System.EventHandler(this.btnExec_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnExec);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnExec;
     }
 }
 
