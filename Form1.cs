@@ -19,11 +19,14 @@ namespace Example13
 
         private void btnExec_Click(object sender, EventArgs e)
         {
-            while(true)
+            DialogResult result = DialogResult.Yes;
+            while(result ==DialogResult.Yes)
             {
-                MessageBox.Show("無限に繰り返します", "確認");
+               result= MessageBox.Show("続けますか？", "確認",
+                   MessageBoxButtons.YesNo);
                 System.Threading.Thread.Sleep(1000);
             }
+            MessageBox.Show("WHILEループを終了しました", "情報");
         }
     }
 }
